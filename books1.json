@@ -1,0 +1,9 @@
+{
+    "mappings": {
+        "fiction": {
+            "_source": {
+                "enabled":false
+            }
+        }
+    }
+}
