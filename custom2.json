@@ -1,0 +1,21 @@
+{
+    "mappings": {
+        "fiction":{
+            "_source":{
+                "enabled": false
+            },
+            "_all": {
+                "enabled": false
+            },
+            "properties": {
+                 "title":   { "type": "text" },
+              "director":   { "type": "text "},
+                "actors":   { "type": "object"},
+                "released": {
+                    "type":   "date",
+                    "format": "YYY-MM-DD"
+                }
+            }
+        } 
+    }
+}
