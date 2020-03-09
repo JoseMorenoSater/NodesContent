@@ -1,0 +1,13 @@
+{
+    "mappings": {
+        "posts": {
+            "properties": {
+                "name":    { "type": "text" },
+                "date":   {
+                    "type": "date",
+                    "format": "DD-MM-YYYY"
+                }
+            }
+        }
+    }
+}
