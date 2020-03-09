@@ -1,0 +1,11 @@
+{
+    "mappings": {
+        "discounts": {
+            "properties":  {
+                "name":    { "type": "text"},
+                "cost":    { "type": "integer"},
+                "discount":{ "type": "integer"}
+            }
+        }
+    }
+}
