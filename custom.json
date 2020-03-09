@@ -1,0 +1,22 @@
+{
+    "settings": {
+        "number_of_shards": 1,
+        "number_of_replicas": 0
+    },
+    "dynamic":"strict",
+    "mappings": {
+        "fiction":{
+            "properties":{
+                "title":    { "type": "text" },
+                "author":   { "type": "text" },
+                "available":{ "type": "boolean"},
+                "pages":    { "type": "integer"},
+                "cost":     { "type": "float" },
+                "published": {
+                    "type": "date",
+                    "format": "YYYY-MM-DD"
+                }
+            }
+        }
+    }
+}
