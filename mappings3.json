@@ -1,0 +1,18 @@
+{
+    "mappings": {
+        "type_two": {
+            "dynamic_templates": {
+            {
+                "long_as_strings": {
+                    "match_mapping_type": "string",
+                    "match": "long_*",
+                    "unmatch": "*_text",
+                    "mapping": {
+                        "type": "long"
+                    }
+                }
+            }
+            }
+        }
+    }
+}
