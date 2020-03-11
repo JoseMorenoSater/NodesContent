@@ -1,0 +1,16 @@
+{
+    "query": {
+        "geo_bounding_box": {
+            "location": {
+                "top_left":{
+                    "lat": 14.540,
+                    "lon": 76.404
+                },
+                "bottom_right":{
+                    "lat": 11.077,
+                    "lon": 78.838
+                }
+            }
+        }
+    }
+}
