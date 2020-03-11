@@ -1,0 +1,18 @@
+{
+    "query": {
+        "bool": {
+            "should": {
+                "match_all": {}
+            },
+            "filter": {
+                "geo_distance": {
+                    "distance": "200km",
+                    "location": {
+                        "lat": 12,
+                        "lon": 77
+                    }
+                }
+            }
+        }
+    }
+}
