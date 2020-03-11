@@ -1,0 +1,16 @@
+{
+    "sort": [
+        "_score",
+        {
+            "_geo_distance": {
+                "location": {
+                    "lat": 52.3760,
+                    "lon": 4.894
+                },
+                "order":     "asc",
+                "unit":      "km",
+                "distance_type": "plane"
+            }
+        }
+    ]
+}
