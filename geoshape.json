@@ -1,0 +1,13 @@
+{
+    "mappings": {
+        "places": {
+            "properties": {
+                "location": {
+                    "type": "geo_shape",
+                    "tree": "quadtree",
+                    "precision": "1m"
+                }
+            }
+        }
+    }
+}
