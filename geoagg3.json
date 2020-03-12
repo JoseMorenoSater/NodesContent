@@ -1,0 +1,33 @@
+{
+    "aggs":{
+    "location":{
+    "filter": {
+        "geo_bounding_box": {
+            "location": {
+                "top_left": {
+                    "lat": 52.5225,
+                    "lon": 4.5552
+                },
+                "bottom_right": {
+                    "lat": 52.2291,
+                    "lon": 5.2322
+                }
+            }
+        }
+    },
+    "aggs" : {
+    "around_amsterdam": {
+        "geo_distance": {
+            "field" : "location",
+            "origin" : "52.3760, 4.894",
+            "unit": "km",
+            "ranges" : [
+                { "from" : 0, "to" : 50 },
+                { "from" : 50, "to" : 200}
+            ]
+        }
+    }
+    }
+    }
+    }
+}
