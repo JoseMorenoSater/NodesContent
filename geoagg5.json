@@ -1,0 +1,22 @@
+{
+    "aggregations" : {
+        "zoomed-in" : {
+            "filter" : {
+                "geo_bounding_box" : {
+                    "location" : {
+                        	 "top_left":  "52.5225, 4.5552",
+                        "bottom_right": "52.2291, 5.2322"
+                    }
+                }
+            },
+            "aggregations":{
+                "zoom1":{
+                    "geohash_grid" : {
+                            "field": "location",
+                        "precision": 8
+                    }
+                }
+            }
+        }
+    }
+}
