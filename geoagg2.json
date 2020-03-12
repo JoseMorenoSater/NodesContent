@@ -1,0 +1,14 @@
+{
+    "aggs": {
+        "around_amsterdam" : {
+            "geo_distance" : {
+                "field" : "location",
+                "origin" : "52.3760, 4.894",
+                "unit": "km",
+                "ranges" : [
+                    { "from" : 0, "to" : 10}
+                ]
+            }
+        }
+    }
+}
