@@ -1,8 +1,10 @@
 {
-    "title": "Prometeo",
-    "date": "2020-01-22",
-    "user": {
-        "id": "1",
-        "name": "Jose"
-    }
+    "name": "Jose Moreno",
+    "books": [
+        {
+            "name": "Thirteen Reasons Why",
+            "genre": "YA",
+            "publisher": "Penguin"
+        }
+    ]
 }
