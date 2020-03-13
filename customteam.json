@@ -1,0 +1,17 @@
+{
+    "settings": {
+        "number_of_shards": 1,
+        "number_of_replicas": 0
+    },
+    "dynamic":"strict",
+    "mappings": {
+        "fiction":{
+            "properties":{
+                "name":    { "type": "text" },
+                "CDS":   { "type": "text" },
+                "active":{ "type": "boolean"},
+                "age":    { "type": "integer"}
+                }
+            }
+        }
+}
