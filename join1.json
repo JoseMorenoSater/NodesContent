@@ -10,7 +10,7 @@
         "tweet": {
             "properties": {
                 "content": { "type": "text" },
-                "user_name": { "type": "Keyword" },
+                "user_name": { "type": "keyword" },
                 "tweeted_at": {"type": "date"}
             }
         }
